@@ -4,32 +4,58 @@ import React from 'react';
 import styled from "styled-components";
 
 const BannerWrapper = styled.section`
-background: #ddd;
+position: relative;
+margin: -70px auto 0;
 `
 const ContWrap = styled.div`
     display: flex;
     background: #fff;
+    padding: 20px 0;
+    border-radius: 30px;
 `
 const Left = styled.div`
 width: 50%;
+border-right: 1px solid #ddd;
     ul {
     display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
     li {
+        width: 80px;
         img {
             width: 100%;
+            border-radius: 50%;
+            margin-bottom: 10px;
         }
     }
     }
 `
 const Right = styled.div`
+padding: 0 30px;
 flex: 1;
 display: flex;
+justify-content: space-between;
+align-items: center;
     p {
     width: 70%;
+    font-size: 20px;
+    line-height: 1.5;
+    b{
+        font-weight: 700;
+    }
     }
     span {
     display: block;
-    width: 30%;
+    text-align: center;
+    width: 150px;
+    border-radius: 30px;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #fff;
+    background: linear-gradient(rgb(248, 106, 69) 0%, rgb(255, 104, 142) 100%);
     }
 `
 
@@ -48,7 +74,8 @@ const MainBanner = () => {
                         </ul>
                     </Left>
                     <Right>
-                        <p>집꾸미기 신규 가입 혜택<br />5% 할인쿠폰 지급</p>
+                        <p>집꾸미기 신규 가입 혜택<br /><b>5% 할인쿠폰 지급</b></p>
+
                         <span>가입하기</span>
                     </Right>
                 </ContWrap>
