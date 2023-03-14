@@ -29,14 +29,18 @@ figure {
     border-left: 2px solid #fff;
 }
 
+.slick-arrow::before {
+    display: none;
+}
+
 .slick-prev {
     transform: translate(-50%, -50%) rotate(-45deg);
-    margin: 0 0 0 -600px;
+    margin: 0 0 0 -700px;
 }
 
 .slick-next {
     transform: translate(-50%, -50%) rotate(135deg);
-    margin: 0 0 0 600px;
+    margin: 0 0 0 700px;
 }
 `
 
