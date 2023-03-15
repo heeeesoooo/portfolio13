@@ -17,8 +17,10 @@ margin-bottom: 30px;
 const SaleProduct = styled.section`
 position: relative;
 padding: 100px 0;
+.pro_sd {
+    /* margin: 0 0 0 30px; */
+}
 figure {
-    position: relative;
     border-radius: 20px;
     overflow: hidden;
 
@@ -29,6 +31,18 @@ figure {
     }
     .text_box{
         background: #fff;
+        padding: 20px 10px;
+        .graytext {
+            font-size: 14px;
+            color: gray;
+            margin-bottom: 20px;
+        }
+        .prod_name {
+            font-size: 20px;
+            margin-bottom: 20px;
+            min-height: 40px;
+        }
+
     }
 }
 
@@ -82,73 +96,89 @@ const SaleList = () => {
                 <P>매일매일 추가되는 100여개의 상품</P>
                 <SaleSlide {...settings} className="pro_sd">
                     <figure>
-                        <div className="img_box"><img src={process.env.PUBLIC_URL + '/img/sale01.jpg'} /></div>
+                        <div className="img_box">
+                            <img src={process.env.PUBLIC_URL + '/img/sale01.jpg'} />
+                        </div>
                         <div className="text_box">
                             <p className="graytext">달팽이리빙</p>
-                            <p>퀴진드마망 자동오픈 계란 한판 보관함 트레이(3단/30구)</p>
+                            <p className="prod_name">퀴진드마망 자동오픈 계란 한판 보관함 트레이(3단/30구)</p>
                             <strong>51%</strong>
                             <span>8,900</span>
                         </div>
                     </figure>
                     <figure>
-                        <div className="img_box"><img src={process.env.PUBLIC_URL + '/img/sale02.jpg'} /></div>
+                        <div className="img_box">
+                            <img src={process.env.PUBLIC_URL + '/img/sale02.jpg'} />
+                        </div>
                         <div className="text_box">
                             <p className="graytext">쉬즈홈</p>
-                            <p>스무디 먼지없는 피치스킨 차렵이불 침구세트 5colors (S/Q)</p>
+                            <p className="prod_name">스무디 먼지없는 피치스킨 차렵이불 침구세트 5colors (S/Q)</p>
                             <strong>50%</strong>
                             <span>24,900</span>
                         </div>
                     </figure>
                     <figure>
-                        <div className="img_box"><img src={process.env.PUBLIC_URL + '/img/sale03.jpg'} /></div>
+                        <div className="img_box">
+                            <img src={process.env.PUBLIC_URL + '/img/sale03.jpg'} />
+                        </div>
                         <div className="text_box">
                             <p className="graytext">셀프인테리어</p>
-                            <p>미니 포켓 보조배터리 PG-PB02</p>
+                            <p className="prod_name">미니 포켓 보조배터리 PG-PB02</p>
                             <strong>14%</strong>
                             <span>29,800</span>
                         </div>
                     </figure>
                     <figure>
-                        <div className="img_box"><img src={process.env.PUBLIC_URL + '/img/sale04.jpg'} /></div>
+                        <div className="img_box">
+                            <img src={process.env.PUBLIC_URL + '/img/sale04.jpg'} />
+                        </div>
                         <div className="text_box">
                             <p className="graytext">콜라보스페이스</p>
-                            <p>케이블매니저 무타공 멀티탭 거치대 케이블 정리함 선반</p>
+                            <p className="prod_name">케이블매니저 무타공 멀티탭 거치대 케이블 정리함 선반</p>
                             <strong>35%</strong>
                             <span>29,900</span>
                         </div>
                     </figure>
                     <figure>
-                        <div className="img_box"><img src={process.env.PUBLIC_URL + '/img/sale05.jpeg'} /></div>
+                        <div className="img_box">
+                            <img src={process.env.PUBLIC_URL + '/img/sale05.jpeg'} />
+                        </div>
                         <div className="text_box">
                             <p className="graytext">셀프인테리어</p>
-                            <p>벤소닉 캐리어 3종세트</p>
+                            <p className="prod_name">벤소닉 캐리어 3종세트</p>
                             <strong>59%</strong>
                             <span>69,900</span>
                         </div>
                     </figure>
                     <figure>
-                        <div className="img_box"><img src={process.env.PUBLIC_URL + '/img/sale06.jpeg'} /></div>
+                        <div className="img_box">
+                            <img src={process.env.PUBLIC_URL + '/img/sale06.jpeg'} />
+                        </div>
                         <div className="text_box">
                             <p className="graytext">셀프인테리어</p>
-                            <p>차가우면 벚꽃이 피는 술잔 4p세트</p>
+                            <p className="prod_name">차가우면 벚꽃이 피는 술잔 4p세트</p>
                             <strong>47%</strong>
                             <span>6,900</span>
                         </div>
                     </figure>
                     <figure>
-                        <div className="img_box"><img src={process.env.PUBLIC_URL + '/img/sale07.jpg'} /></div>
+                        <div className="img_box">
+                            <img src={process.env.PUBLIC_URL + '/img/sale07.jpg'} />
+                        </div>
                         <div className="text_box">
                             <p className="graytext">레드팟</p>
-                            <p>콘스쁘띠 디자인 빈백 1인용 쇼파 (12 Type)</p>
+                            <p className="prod_name">콘스쁘띠 디자인 빈백 1인용 쇼파 (12 Type)</p>
                             <strong>29%</strong>
                             <span>70,000</span>
                         </div>
                     </figure>
                     <figure>
-                        <div className="img_box"><img src={process.env.PUBLIC_URL + '/img/sale08.jpg'} /></div>
+                        <div className="img_box">
+                            <img src={process.env.PUBLIC_URL + '/img/sale08.jpg'} />
+                        </div>
                         <div className="text_box">
                             <p className="graytext">로즈소녀하우스</p>
-                            <p>3단 북트롤리 이동식책꽂이</p>
+                            <p className="prod_name">3단 북트롤리 이동식책꽂이</p>
                             <strong>23%</strong>
                             <span>19,900</span>
                         </div>
