@@ -17,37 +17,49 @@ margin-bottom: 30px;
 const SaleProduct = styled.section`
 position: relative;
 padding: 100px 0;
-.pro_sd {
-    /* margin: 0 0 0 30px; */
-}
-figure {
-    border-radius: 20px;
-    overflow: hidden;
 
-    .img_box {
-        img {
-            width: 100%;
-        }
-    }
-    .text_box{
-        background: #fff;
-        padding: 20px 10px;
-        .graytext {
-            font-size: 14px;
-            color: gray;
-            margin-bottom: 20px;
-        }
-        .prod_name {
-            font-size: 20px;
-            margin-bottom: 20px;
-            min-height: 40px;
-        }
-
-    }
+.slide_wrap {
+    margin: 0 -15px;
 }
+.prod_wrap {
+    padding: 0 15px;
+}
+
+.img_box img {
+    width: 100%;
+}
+
+.text_box .graytext {
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.text_box .prod_name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    min-height: 50px;
+    margin-bottom: 10px;
+}
+
+.text_box strong {
+    font-size: 30px;
+    font-weight: 700;
+    color: red;
+    margin-right: 10px;
+}
+
+.text_box span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
 
 /* 슬라이드 설정 */
-
 .slick-arrow {
     position: absolute;
     top: 50%;
@@ -91,11 +103,11 @@ const SaleList = () => {
     }
     return (
         <SaleProduct>
-            <Inner>
+            <Inner className="inner">
                 <H2>투데이특가</H2>
                 <P>매일매일 추가되는 100여개의 상품</P>
-                <SaleSlide {...settings} className="pro_sd">
-                    <figure>
+                <SaleSlide {...settings} className="slide_wrap">
+                    <figure className="prod_wrap">
                         <div className="img_box">
                             <img src={process.env.PUBLIC_URL + '/img/sale01.jpg'} />
                         </div>
@@ -106,7 +118,7 @@ const SaleList = () => {
                             <span>8,900</span>
                         </div>
                     </figure>
-                    <figure>
+                    <figure className="prod_wrap">
                         <div className="img_box">
                             <img src={process.env.PUBLIC_URL + '/img/sale02.jpg'} />
                         </div>
@@ -117,7 +129,7 @@ const SaleList = () => {
                             <span>24,900</span>
                         </div>
                     </figure>
-                    <figure>
+                    <figure className="prod_wrap">
                         <div className="img_box">
                             <img src={process.env.PUBLIC_URL + '/img/sale03.jpg'} />
                         </div>
@@ -128,7 +140,7 @@ const SaleList = () => {
                             <span>29,800</span>
                         </div>
                     </figure>
-                    <figure>
+                    <figure className="prod_wrap">
                         <div className="img_box">
                             <img src={process.env.PUBLIC_URL + '/img/sale04.jpg'} />
                         </div>
@@ -139,7 +151,7 @@ const SaleList = () => {
                             <span>29,900</span>
                         </div>
                     </figure>
-                    <figure>
+                    <figure className="prod_wrap">
                         <div className="img_box">
                             <img src={process.env.PUBLIC_URL + '/img/sale05.jpeg'} />
                         </div>
@@ -150,7 +162,7 @@ const SaleList = () => {
                             <span>69,900</span>
                         </div>
                     </figure>
-                    <figure>
+                    <figure className="prod_wrap">
                         <div className="img_box">
                             <img src={process.env.PUBLIC_URL + '/img/sale06.jpeg'} />
                         </div>
@@ -161,7 +173,7 @@ const SaleList = () => {
                             <span>6,900</span>
                         </div>
                     </figure>
-                    <figure>
+                    <figure className="prod_wrap">
                         <div className="img_box">
                             <img src={process.env.PUBLIC_URL + '/img/sale07.jpg'} />
                         </div>
@@ -172,7 +184,7 @@ const SaleList = () => {
                             <span>70,000</span>
                         </div>
                     </figure>
-                    <figure>
+                    <figure className="prod_wrap">
                         <div className="img_box">
                             <img src={process.env.PUBLIC_URL + '/img/sale08.jpg'} />
                         </div>
