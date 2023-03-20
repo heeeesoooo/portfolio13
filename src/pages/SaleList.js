@@ -1,13 +1,9 @@
 import styled from "styled-components";
 import "slick-carousel/slick/slick.css";
 import SaleSlide from "react-slick";
-import { Inner, H2 } from "./common";
+import { Inner, H2, P } from "./common";
 import { useRef } from "react";
 
-const P = styled.p`
-font-size: 20px;
-margin-bottom: 30px;
-`
 
 const Itm = styled.div`
 margin: 0 15px;
@@ -25,6 +21,7 @@ padding: 100px 0;
 
 .slide_wrap {
     margin: 0 -15px;
+    padding: 0 5px;
 }
 
 .img_box img {

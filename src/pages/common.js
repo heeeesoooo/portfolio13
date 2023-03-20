@@ -10,3 +10,8 @@ font-size: 40px;
 font-weight: 700;
 margin-bottom: 15px;
 `
+
+export const P = styled.h2`
+font-size: 20px;
+margin-bottom: 30px;
+`
