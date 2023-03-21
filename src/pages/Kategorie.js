@@ -56,12 +56,12 @@ position: relative;
 }
 
 .slick-prev {
-    background-image: url('/img/arrow_13.png');
+    background-image: url(${process.env.PUBLIC_URL}/img/arrow_13.png);
     right: 50px;
 }
 
 .slick-next {
-    background-image: url('/img/arrow_14.png');
+    background-image: url(${process.env.PUBLIC_URL}/img/arrow_14.png);
     right: 0;
 }
 `

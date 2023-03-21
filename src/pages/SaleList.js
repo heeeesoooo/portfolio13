@@ -72,12 +72,12 @@ padding: 100px 0;
 }
 
 .prev {
-    background-image: url('/img/arrow_left.png');
+    background-image: url(${process.env.PUBLIC_URL}/img/arrow_left.png);
     margin: 0 0 0 -700px;
 }
 
 .next {
-    background-image: url('/img/arrow_right.png');
+    background-image: url(${process.env.PUBLIC_URL}/img/arrow_right.png);
     margin: 0 0 0 700px;
 }
 
