@@ -10,10 +10,12 @@ margin: 0 15px;
 border-radius: 20px;
 box-shadow: rgba(100, 111, 124, 0.2) 0px 2px 8px;
 overflow: hidden;
+cursor: pointer;
 `
 const SaleProduct = styled.section`
 position: relative;
 padding: 100px 0;
+
 
 .inner {
     overflow: hidden;
@@ -69,6 +71,7 @@ padding: 100px 0;
     background-size: cover;
     width: 56px;
     height: 56px;
+    cursor: pointer;
 }
 
 .prev {

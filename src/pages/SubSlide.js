@@ -1,10 +1,39 @@
-import React from 'react';
 import "slick-carousel/slick/slick.css";
 import Sub_slide from "react-slick";
 import styled from 'styled-components';
 import { Inner } from "./common";
+import { useRef } from "react";
 
 const SubProduct = styled.section`
+position: relative;
+
+.button {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 56px;
+    height: 56px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.prev {
+    background-image: url(${process.env.PUBLIC_URL}/img/arrow_left.png);
+    margin: 0 0 0 -700px;
+}
+
+.next {
+    background-image: url(${process.env.PUBLIC_URL}/img/arrow_right.png);
+    margin: 0 0 0 700px;
+}
+
 
 .content01 {
     background-image: url(${process.env.PUBLIC_URL}/img/sub_back01.png);
@@ -41,6 +70,41 @@ const Content = styled.div`
     transform: translate(-50%, -50%);
 }
 
+.left_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+
+    span {
+        width:80px;
+        font-size: 16px;
+        padding: 10px 0;
+        background: #222;
+        text-align:center;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+
+    a {
+        text-align: center;
+        padding: 15px 25px;
+        border: 1px solid #fff;
+    }
+}
+
 .prod_wrap {
     display: flex;
     gap: 30px;
@@ -51,12 +115,17 @@ const Content = styled.div`
 `
 
 const Itm = styled.div`
+border-radius: 20px;
+box-shadow: rgba(100, 111, 124, 0.2) 0px 2px 8px;
+overflow: hidden;
+cursor: pointer;
 
 img {
     width: 100%;
 }
 
 .text_box {
+    background: #fff;
     padding: 20px 20px;
 }
 .text_box .graytext {
@@ -67,11 +136,15 @@ img {
 }
 
 .text_box .prod_name {
+    width: auto;
+    height: 25px;
     font-size: 20px;
     font-weight: 700;
     line-height: 25px;
-    min-height: 50px;
     margin-bottom: 10px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
 }
 
 .text_box strong {
@@ -91,17 +164,19 @@ img {
 
 const SubSlide = () => {
     const settings = {
-        arrows: true,
+        arrows: false,
         dots: false,
         infinite: true,
         speed: 500,
-        autoplay: false,
+        autoplay: true,
     }
+
+    const sl = useRef(null)
     return (
         <SubProduct>
-            {/* <button className="prev" onClick={() => sl.current.slickPrev()}></button>
-            <button className="next" onClick={() => sl.current.slickNext()}></button> */}
-            <Sub_slide {...settings} className="sub_slide">
+            <button className="prev button" onClick={() => sl.current.slickPrev()}></button>
+            <button className="next button" onClick={() => sl.current.slickNext()}></button>
+            <Sub_slide {...settings} className="sub_slide" ref={sl} >
                 <Content className="content01">
                     <Inner className="inner">
                         <div className="left_wrap">

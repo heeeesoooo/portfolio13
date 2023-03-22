@@ -5,6 +5,7 @@ import MainBanner from './pages/MainBanner';
 import SaleList from './pages/SaleList';
 import Kategorie from './pages/Kategorie';
 import SubSlide from './pages/SubSlide';
+import ItmList01 from './pages/ItmList01';
 
 
 
@@ -19,6 +20,7 @@ const App = () => {
             <SaleList />
             <Kategorie />
             <SubSlide />
+            <ItmList01 />
         </>
     );
 }

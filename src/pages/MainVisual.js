@@ -27,6 +27,7 @@ figure {
     height: 50px;
     border-top: 2px solid #fff;
     border-left: 2px solid #fff;
+    cursor: pointer;
 }
 
 .slick-arrow::before {

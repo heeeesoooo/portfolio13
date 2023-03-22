@@ -45,5 +45,5 @@ body {
 }
 
 * {
-    outline: 1px solid tomato;
+    outline: 1px --solid tomato;
 }

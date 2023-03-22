@@ -57,6 +57,7 @@ align-items: center;
     line-height: 40px;
     color: #fff;
     background: linear-gradient(rgb(248, 106, 69) 0%, rgb(255, 104, 142) 100%);
+    cursor: pointer;
     }
 `
 

@@ -42,6 +42,7 @@ position: relative;
 
 
 .slick-arrow {
+    cursor: pointer;
     border: none;
     background-color: transparent;
     font-size: 0;
