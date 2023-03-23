@@ -119,9 +119,15 @@ border-radius: 20px;
 box-shadow: rgba(100, 111, 124, 0.2) 0px 2px 8px;
 overflow: hidden;
 cursor: pointer;
-
-img {
+.img_box:hover img {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.img_box img {
     width: 100%;
+}
+.img_box {
+    overflow: hidden;
 }
 
 .text_box {
@@ -155,8 +161,13 @@ img {
 }
 
 .text_box span {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
+    color: #111;
+}
+
+.text_box span::after {
+    content: '원';
 }
 
 `

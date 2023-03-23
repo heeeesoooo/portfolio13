@@ -8,7 +8,7 @@ import { useRef } from "react";
 const Itm = styled.div`
 margin: 0 15px;
 border-radius: 20px;
-box-shadow: rgba(100, 111, 124, 0.2) 0px 2px 8px;
+border: 1px solid #ddd;
 overflow: hidden;
 cursor: pointer;
 `
@@ -20,14 +20,19 @@ padding: 100px 0;
 .inner {
     overflow: hidden;
 }
-
+.img_box:hover img {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.img_box img {
+    width: 100%;
+}
+.img_box {
+    overflow: hidden;
+}
 .slide_wrap {
     margin: 0 -15px;
-    padding: 0 5px;
-}
-
-.img_box img {
-    max-width: 100%;
+    padding: 0 1px;
 }
 .text_box {
     padding: 20px 20px;
@@ -55,8 +60,13 @@ padding: 100px 0;
 }
 
 .text_box span {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
+    color: #111;
+}
+
+.text_box span::after {
+    content: '원';
 }
 
 .inner button {
